@@ -6,6 +6,11 @@
     width: 1330px;
     display: block;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 65px !important;
   }
+}
+
+.section-latest-post {
+  margin-bottom: 15rem;
+  overflow: hidden;
 }
