@@ -106,6 +106,19 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.header-main {
+  font-size: 4.5rem;
+  color: #fff;
+  letter-spacing: 1.5rem;
+  text-transform: capitalize; }
+
+.paragraph-2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem 0; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -117,6 +130,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 4rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -179,6 +195,51 @@ body {
   animation-timing-function: ease-out;
   animation-delay: 0.75s;
   animation-fill-mode: backwards; }
+
+.blog-latest-news-underline::after {
+  content: "";
+  border-bottom: 1px solid rgba(27, 20, 100, 0.56);
+  height: 2px;
+  width: 1330px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px; }
+
+.latest__news-details {
+  display: flex; }
+
+.latest__news-post {
+  flex: 0 0 30%; }
+  .latest__news-post:not(:last-child) {
+    border-right: 2px solid rgba(27, 20, 100, 0.56);
+    display: block;
+    height: 14rem;
+    margin-right: 6rem; }
+
+.latest__news-date {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: #f1c40f;
+  padding: 1.4rem 0; }
+
+.latest__news-header {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.2rem; }
+
+.latest__news-link:link, .latest__news-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #333; }
+
+.latest__news-link:hover, .latest__news-link:active {
+  background-image: linear-gradient(to bottom right, #f1c40f, #1b1464);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .testimonial {
   width: 75%;
@@ -354,6 +415,27 @@ body {
       .header__text-box {
         top: 50%; } }
 
+.header__blog {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(54, 40, 199, 0.8), rgba(27, 20, 100, 0.8)), url(/css/img/laligaTeam.jpg);
+  position: relative; }
+  .header__blog-main {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__blog-imgContainer {
+    width: 80%;
+    height: auto; }
+  .header__blog-img {
+    height: 80%; }
+  .header__blog-textbox {
+    position: absolute;
+    top: 10%;
+    left: 45%; }
+
 .navigation__checkbox {
   display: none; }
 
@@ -477,6 +559,15 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.section-latest-news::after {
+  content: "";
+  border-bottom: 1px solid rgba(27, 20, 100, 0.56);
+  height: 2px;
+  width: 1330px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 55px; }
 
 .section-testimonials {
   padding: 15rem 0;

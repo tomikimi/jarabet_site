@@ -69,3 +69,18 @@
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
+
+.header-main {
+  font-size: 4.5rem;
+  color: #fff;
+  letter-spacing: 1.5rem;
+  text-transform: capitalize;
+}
+
+.paragraph-2 {
+  font-size: 2rem;
+  color: $color-primary-yellow-dark;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem 0;
+}
