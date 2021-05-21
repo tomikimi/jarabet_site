@@ -6,19 +6,45 @@
   display: block;
   margin: 0 auto;
   margin-top: 55px;
+  @media only screen and (max-width: $bp-medium) {
+    width: 850px;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 500px;
+  }
 }
 
 .latest__news {
   &-details {
     display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
   &-post {
     flex: 0 0 30%;
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 29%;
+    }
     &:not(:last-child) {
       border-right: 2px solid rgba($color-primary-blue-dark, 0.56);
       display: block;
       height: 14rem;
       margin-right: 6rem;
+      @media only screen and (max-width: $bp-medium) {
+        margin-right: 4rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        border-right: none;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+      }
     }
   }
   &-date {
@@ -28,6 +54,9 @@
     letter-spacing: 0.5rem;
     color: $color-primary-yellow-dark;
     padding: 1.4rem 0;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
 
   &-header {
@@ -36,6 +65,9 @@
     text-transform: capitalize;
     letter-spacing: 0.3rem;
     word-spacing: 0.2rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.2rem;
+    }
   }
 
   &-link:link,

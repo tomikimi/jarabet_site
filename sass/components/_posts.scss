@@ -1,12 +1,27 @@
 .latest__post {
   &-container {
     display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 10rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 7rem;
+    }
   }
   &-detail {
     display: flex;
     flex-direction: column;
     flex: 0 0 35%;
-    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 30%;
+    }
   }
   &-imgContainer {
     width: 85%;
@@ -24,6 +39,12 @@
         opacity: 1;
         transform: scale(1.03);
       }
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+      }
     }
   }
 
@@ -34,8 +55,14 @@
     letter-spacing: 0.5rem;
     color: $color-primary-yellow-dark;
     padding: 1.4rem 0;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
-  &-gisthead {
+  &-gistHead {
     font-weight: 500;
     font-size: 2rem;
     text-transform: capitalize;
@@ -62,6 +89,12 @@
 
   &-textContent {
     width: 85%;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -70,4 +103,12 @@
   position: relative;
   top: 1rem;
   left: 48rem;
+  @media only screen and (max-width: $bp-small) {
+    top: -8rem;
+    left: 24rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    top: -8rem;
+    left: 15rem;
+  }
 }

@@ -111,6 +111,10 @@ body {
   color: #fff;
   letter-spacing: 1.5rem;
   text-transform: capitalize; }
+  @media only screen and (max-width: 75em) {
+    .header-main {
+      font-size: 3.5rem;
+      letter-spacing: 0.9rem; } }
 
 .paragraph-2 {
   font-size: 2rem;
@@ -118,6 +122,9 @@ body {
   font-weight: 300;
   letter-spacing: 0.2rem;
   margin: 1.5rem 0; }
+  @media only screen and (max-width: 75em) {
+    .paragraph-2 {
+      font-size: 1.7rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -204,17 +211,43 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 55px; }
+  @media only screen and (max-width: 56.25em) {
+    .blog-latest-news-underline::after {
+      width: 850px; } }
+  @media only screen and (max-width: 37.5em) {
+    .blog-latest-news-underline::after {
+      width: 500px; } }
 
 .latest__news-details {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .latest__news-details {
+      justify-content: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .latest__news-details {
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 2rem; } }
 
 .latest__news-post {
   flex: 0 0 30%; }
+  @media only screen and (max-width: 56.25em) {
+    .latest__news-post {
+      flex: 0 0 29%; } }
   .latest__news-post:not(:last-child) {
     border-right: 2px solid rgba(27, 20, 100, 0.56);
     display: block;
     height: 14rem;
     margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .latest__news-post:not(:last-child) {
+        margin-right: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .latest__news-post:not(:last-child) {
+        border-right: none;
+        margin-right: 0rem;
+        margin-bottom: 2rem; } }
 
 .latest__news-date {
   display: inline-block;
@@ -223,6 +256,9 @@ body {
   letter-spacing: 0.5rem;
   color: #f1c40f;
   padding: 1.4rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .latest__news-date {
+      font-size: 2rem; } }
 
 .latest__news-header {
   font-weight: 500;
@@ -230,6 +266,9 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.3rem;
   word-spacing: 0.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .latest__news-header {
+      font-size: 2.2rem; } }
 
 .latest__news-link:link, .latest__news-link:visited {
   text-decoration: none;
@@ -243,12 +282,27 @@ body {
 
 .latest__post-container {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .latest__post-container {
+      justify-content: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .latest__post-container {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 10rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .latest__post-container {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 7rem; } }
 
 .latest__post-detail {
   display: flex;
   flex-direction: column;
-  flex: 0 0 35%;
-  flex-wrap: wrap; }
+  flex: 0 0 35%; }
+  @media only screen and (max-width: 56.25em) {
+    .latest__post-detail {
+      flex: 0 0 30%; } }
 
 .latest__post-imgContainer {
   width: 85%;
@@ -264,6 +318,12 @@ body {
     .latest__post-imgContainer-img:hover {
       opacity: 1;
       transform: scale(1.03); }
+    @media only screen and (max-width: 37.5em) {
+      .latest__post-imgContainer-img {
+        width: 100%; } }
+    @media only screen and (max-width: 31.25em) {
+      .latest__post-imgContainer-img {
+        width: 100%; } }
 
 .latest__post-date {
   display: inline-block;
@@ -272,8 +332,14 @@ body {
   letter-spacing: 0.5rem;
   color: #f1c40f;
   padding: 1.4rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .latest__post-date {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .latest__post-date {
+      font-size: 2rem; } }
 
-.latest__post-gisthead {
+.latest__post-gistHead {
   font-weight: 500;
   font-size: 2rem;
   text-transform: capitalize;
@@ -292,12 +358,26 @@ body {
 
 .latest__post-textContent {
   width: 85%; }
+  @media only screen and (max-width: 37.5em) {
+    .latest__post-textContent {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .latest__post-textContent {
+      margin-bottom: 3rem; } }
 
 .btn-center {
   margin: 3rem 0;
   position: relative;
   top: 1rem;
   left: 48rem; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-center {
+      top: -8rem;
+      left: 24rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn-center {
+      top: -8rem;
+      left: 15rem; } }
 
 .testimonial {
   width: 75%;
@@ -476,6 +556,8 @@ body {
 .header__blog {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(54, 40, 199, 0.8), rgba(27, 20, 100, 0.8)), url(/css/img/laligaTeam.jpg);
+  background-size: cover;
+  background-position: top;
   position: relative; }
   .header__blog-main {
     display: flex;
@@ -484,15 +566,44 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 75em) {
+      .header__blog-main {
+        width: 69%;
+        top: 45%;
+        left: 40%;
+        transform: translate(-30%, -20%); } }
+    @media only screen and (max-width: 68.75em) {
+      .header__blog-main {
+        flex-direction: column;
+        width: 69%;
+        top: 29%;
+        left: 40%;
+        transform: translate(-30%, -20%); } }
   .header__blog-imgContainer {
     width: 80%;
     height: auto; }
+    @media only screen and (max-width: 75em) {
+      .header__blog-imgContainer {
+        width: 100%;
+        margin-right: 2rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .header__blog-imgContainer {
+        width: 50%;
+        align-self: center;
+        margin-right: -1rem; } }
   .header__blog-img {
     height: 80%; }
+    @media only screen and (max-width: 75em) {
+      .header__blog-img {
+        width: 100%; } }
+    @media only screen and (max-width: 68.75em) {
+      .header__blog-img {
+        width: 80%; } }
   .header__blog-textbox {
-    position: absolute;
-    top: 10%;
-    left: 45%; }
+    margin-top: 4rem; }
+    @media only screen and (max-width: 68.75em) {
+      .header__blog-textbox {
+        text-align: center; } }
 
 .navigation__checkbox {
   display: none; }
@@ -618,14 +729,22 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
-.section-latest-news::after {
-  content: "";
-  border-bottom: 1px solid rgba(27, 20, 100, 0.56);
-  height: 2px;
-  width: 1330px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 65px !important; }
+.section-latest-news {
+  overflow: hidden; }
+  .section-latest-news::after {
+    content: "";
+    border-bottom: 1px solid rgba(27, 20, 100, 0.56);
+    height: 2px;
+    width: 1330px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 65px !important; }
+    @media only screen and (max-width: 56.25em) {
+      .section-latest-news::after {
+        width: 850px; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-latest-news::after {
+        width: 500px; } }
 
 .section-latest-post {
   margin-bottom: 15rem;
