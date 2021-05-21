@@ -87,4 +87,34 @@
     -webkit-background-clip: text;
     color: transparent;
   }
+  &-tag {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: $color-grey-dark-3;
+  }
+  &-text {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $color-primary-yellow-dark;
+  }
+  &-taglink:link,
+  &-taglink:visited {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  &-taglink:hover,
+  &-taglink:active {
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary-yellow-dark,
+      $color-primary-blue-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+  }
 }

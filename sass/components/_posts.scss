@@ -26,6 +26,7 @@
   &-imgContainer {
     width: 85%;
     margin: 0;
+    border-radius: 10%;
     overflow: hidden;
     background-color: $color-black;
 
@@ -64,7 +65,7 @@
   }
   &-gistHead {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     letter-spacing: 0.3rem;
     word-spacing: 0.2rem;

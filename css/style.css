@@ -280,6 +280,29 @@ body {
   -webkit-background-clip: text;
   color: transparent; }
 
+.latest__news-tag {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #333; }
+
+.latest__news-text {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f1c40f; }
+
+.latest__news-taglink:link, .latest__news-taglink:visited {
+  text-decoration: none;
+  display: inline-block; }
+
+.latest__news-taglink:hover, .latest__news-taglink:active {
+  background-image: linear-gradient(to bottom right, #f1c40f, #1b1464);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer; }
+
 .latest__post-container {
   display: flex; }
   @media only screen and (max-width: 56.25em) {
@@ -307,6 +330,7 @@ body {
 .latest__post-imgContainer {
   width: 85%;
   margin: 0;
+  border-radius: 10%;
   overflow: hidden;
   background-color: #000; }
   .latest__post-imgContainer-img {
@@ -341,7 +365,7 @@ body {
 
 .latest__post-gistHead {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: 0.3rem;
   word-spacing: 0.2rem; }
@@ -774,6 +798,9 @@ body {
 .section-latest-post {
   margin-bottom: 15rem;
   overflow: hidden; }
+
+.section-blog {
+  background-color: #f7f7f7; }
 
 .section-testimonials {
   padding: 15rem 0;
