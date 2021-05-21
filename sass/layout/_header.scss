@@ -36,6 +36,42 @@
       top: 50%;
     }
   }
+  &__nav {
+    position: absolute;
+    top: 2rem;
+    left: 25rem;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+  &__navlist {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__listitem {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-primary-yellow-dark;
+      font-size: 1.9rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    &:hover,
+    &:active {
+      color: $color-primary-yellow-light;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
 }
 
 .header__blog {
