@@ -500,6 +500,17 @@ body {
     transform: scale(1);
     filter: blur(3px) brightness(80%); }
 
+.video__tutorials-details {
+  margin: 4rem 0;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff200; }
+
+.video__tutorials-text {
+  font-size: 5rem;
+  color: #1b1464; }
+
 .footer {
   background-color: #1b1464;
   padding: 10rem 0;
@@ -854,5 +865,14 @@ body {
   margin-top: -18rem; }
   @media (max-width: 56.25em) {
     .section-testimonials {
+      padding: 10rem 0;
+      margin-top: -10rem; } }
+
+.section-bet-tutorials {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
+  margin-top: -18rem; }
+  @media (max-width: 56.25em) {
+    .section-bet-tutorials {
       padding: 10rem 0;
       margin-top: -10rem; } }
