@@ -1,0 +1,9 @@
+.section-promotions {
+  padding: 15rem 0;
+  background-color: $color-yellow;
+  margin-top: -18rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+    margin-top: -10rem;
+  }
+}

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-primary-blue-dark;
+  background-color: $color-blue;
   padding: 10rem 0;
   font-size: 1.4rem;
 
@@ -74,14 +74,14 @@
   }
 }
 
-.social__media{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    cursor: pointer;
- &-icon{
-  height: 3rem;
-  width: 3rem;
-  fill: $color-primary-yellow-dark;
- }
+.social__media {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  cursor: pointer;
+  &-icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-primary-yellow-dark;
+  }
 }
